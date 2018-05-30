@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.databind.deser.Deserializers.Base;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import priv.scor.common.Result;
@@ -18,7 +20,7 @@ import priv.scor.repository.UserRepository;
 
 @Api(value="/login",tags = "用户登录接口")
 @RestController
-public class LoginController {
+public class LoginController extends BaseController{
     
     @Autowired
     private UserRepository userRepository;

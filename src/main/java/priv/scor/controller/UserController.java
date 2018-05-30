@@ -29,7 +29,7 @@ import javax.servlet.http.HttpSession;
  */
 @Api(value="user",tags = "用户接口相关")
 @RestController
-public class UserController {
+public class UserController extends BaseController{
     public static final Logger logger = LoggerFactory.getLogger(UserController.class);
     @Autowired
     private UserService userService;
@@ -48,9 +48,6 @@ public class UserController {
     public Page<UserEntity> listByPageable(@RequestParam(value = "page") Integer page,@RequestParam(value = "size") Integer size){
         Pageable pageable = new PageRequest(page,size);
         List<UserEntity> userEntitys = userRepository.findAll(pageable).getContent();
-        if(true) {
-            throw new AppException(Code.NOT_LOGIN, Code.NOT_LOGIN.getText());
-        }
         return userService.getUserByPage(pageable);
     }
 

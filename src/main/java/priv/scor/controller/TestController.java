@@ -24,7 +24,7 @@ import priv.scor.services.UserService;
  */
 @RequestMapping(value="/test")
 @RestController
-public class TestController{
+public class TestController extends BaseController{
     
     @GetMapping(value = "/test/getCategory")
     @ResponseBody

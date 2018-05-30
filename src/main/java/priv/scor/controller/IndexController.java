@@ -18,7 +18,7 @@ import priv.scor.entity.CategoryEntity;
  * @Package_name priv.scor.controller
  */
 @Controller
-public class IndexController {
+public class IndexController extends BaseController{
 
     @GetMapping("/")
     public String home() {
