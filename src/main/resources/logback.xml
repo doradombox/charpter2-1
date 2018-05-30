@@ -8,7 +8,7 @@
     </appender>
     <!-- 文件输出日志  ,每天一个，最多保存90天 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>logs/fzjx-web.log</File>
+        <File>logs/chapter2-1.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>logs/log_%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>90</maxHistory>
