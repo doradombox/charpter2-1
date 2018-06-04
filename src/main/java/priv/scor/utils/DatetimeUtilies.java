@@ -50,13 +50,8 @@ public class DatetimeUtilies {
 
     /**
      * 检查给定的日期是否在两个日期中间
-     *
-     * @param current
-     *            compare date
-     * @param min
-     *            min date
-     * @param max
-     *            max date
+     * @param min min date
+     * @param max max date
      * @return if between min date and max date, then return true.
      */
     public static boolean between(Date current, Date min, Date max) {
@@ -66,8 +61,7 @@ public class DatetimeUtilies {
     /**
      * 计算给定月分的自然周划分区间段（可能会上下月交界）为5周。
      *
-     * @param month
-     *            指定的月份
+     * @param month 指定的月份
      * @return weeks array. for example, ['03.01-03.07', '03.08-03.14']
      */
     public static List<String> getMonthWeeks(int month) {
