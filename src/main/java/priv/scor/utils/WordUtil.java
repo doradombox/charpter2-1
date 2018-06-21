@@ -11,13 +11,11 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.io.Writer;
 import java.lang.reflect.Method;
 import java.math.BigDecimal;
 import java.util.Enumeration;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -26,10 +24,8 @@ import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
 import org.apache.catalina.core.ApplicationContext;
-import org.apache.log4j.spi.LoggerFactory;
 import org.slf4j.Logger;
 
-import com.hg.xdoc.XDocService;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
