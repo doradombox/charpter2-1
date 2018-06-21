@@ -41,7 +41,7 @@
                     xAxis : [
                         {
                             type : 'category',
-                            data : (function(){
+                            data :(function(){
                                 var arr=[];
                                 $.ajax({
                                      type : "get",
